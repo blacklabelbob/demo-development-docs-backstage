@@ -3,9 +3,15 @@ kind: Component
 metadata:
   name: demo-development-docs
   description: "My first app where I track my dev skills and PRDs"
+  links:
+    - title: Product Requirements Document (PRD)
+      url: ./docs/prd.md
+      icon: docs
   annotations:
     github.com/project-slug: blacklabelbob/demo-development-docs-backstage
 spec:
   type: website
   lifecycle: experimental
   owner: group:default/team-a
+  providesApis:
+    - demo-api
